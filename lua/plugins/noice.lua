@@ -7,6 +7,12 @@ return {
         view = "notify",
         filter = { event = "msg_showmode" },
       },
+    },
+    lsp = {
+      hover = { enabled = false },
+      signature = { -- Huge bug in this where it was stealing focus and leaving a black window.
+        enabled = false
+      }
     }
   },
   dependencies = {
